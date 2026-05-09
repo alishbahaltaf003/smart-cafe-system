@@ -16,7 +16,8 @@ public:
 
     string getName();
     double getPrice();
-
+    string getCategory();
+    
     void display();
 };
 

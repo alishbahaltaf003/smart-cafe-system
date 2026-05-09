@@ -50,3 +50,25 @@ void Order::displayOrder() {
              << endl;
     }
 }
+void Order::searchItem(string name) {
+    for (int i = 0; i < items.size(); i++) {
+        if (items[i].getName() == name) {
+            cout << "Item Found: " << items[i].getName()
+                 << " Qty: " << quantity[i] << endl;
+            return;
+        }
+    }
+    cout << "Item not found\n";
+}
+void Order::filterByCategory(string cat) {
+    for (int i = 0; i < items.size(); i++) {
+        if (items[i].getCategory() == cat) {
+            cout << items[i].getName()
+                 << " - "
+                 << items[i].getPrice()
+                 << " - "
+                 << items[i].getCategory()
+                 << endl;
+        }
+    }
+}
