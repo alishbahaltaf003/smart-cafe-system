@@ -1,0 +1,7 @@
+Coffee,5,Drinks
+Tea,3,Drinks
+Burger,10,FastFood
+Pizza,15,FastFood
+Fries,6,FastFood
+IceCream,7,Dessert
+Cake,12,Dessert
